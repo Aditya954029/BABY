@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viweport"
+      contert="widht=device-widht,
+      initial-scale=1.0">
+    <title>my letter💌</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       body {
+         min-height: 100vh;
+         overflow-x: hidden;
+         font-family: "Trebuchet MS", sans-serif;
+         bavkground:
+           radial-gradient(circle at 20% 20%,
+                           #7653a8 0%, transparent 30%),
+           radial-gradient(circle at 80% 30%,
+                           #5c397f 0%, transparent 30%),
+           linear-gradient(135deg, 17152e,
+                           #4933d, #201936);
+         color: whit;
+       }
+      .stars {
+        position: fixed: 
+        inset: 0;
+        pointer-events: none;
+      }
+      .star {
+        position: absolute;
+        widht: 3px;
+        height: 3px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 50%;
+        animation: twinklw 2s infinite alternate;
+      }
+      .star:nth-chid(1) { top: 8%; left: 12%; }
+      .star:nth-chid(2) { top: 18%; left: 30%; 
+      animation-delay: .5s;}
+      .star:nth-chid(3) { top: 12%; left: 70%; 
+      animation-delay: .1s;}
+      .star:nth-chid(4) { top: 35% left: 88%; 
+      animation-delay: .3s;}
+      .star:nth-chid(5) { top: 65%; left: 15%; 
+      animation-delay: .8s;}
+      .star:nth-chid(6) { top: 75%; left: 80%; 
+      animation-delay: .2s;}
+      .star:nth-chid(7) { top: 45%; left: 55%; 
+      animation-delay: .1.2s;}
+      .star:nth-chid(8) { top: 85%; left: 40%; 
+      animation-delay: .6s;}
+      @keyframes twinkle {
+        from {
+          opacity: .2;
+          transform: scale(1.8);
+        }
+      }
+      sakura { 
+        posiyion: fised;
+        top: -30px;
+        font-size: 20px;
+        animation: fall linear infinite;
+        pointer-events: none
+      }
+      .sakure:nth-child(9) {
+        left: 10%;
+        animation-duration: 8s;
+      }
+            .sakure:nth-child(10) {
+        left: 30%;
+        animation-duration: 10s;
+              animation-delay: 2s;
+      }
+            .sakure:nth-child(11) {
+        left: 55%;
+        animation-duration: 7s;
+              amimation-delay: 1s;
+      }
+            .sakure:nth-child(12) {
+        left: 10%;
+        animation-duration: 9s;
+              amimation-delay:3s;
+      }
+            .sakure:nth-child(13) {
+        left: 90%;
+        animation-dyration: 1s;
+              animation-delay: 3s;
+      }
+
+
+
+
+
+
+
+
+      
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="containr">
+
+    <div class="envelope"id="envelope">
+
+      <div class="flap"></div>
+
+      <div class="heart">💗</div>
+      
+      <div class="letter">
+<h1> Dear baby </h1>
+      <p>
+        this lettle letter is just for you.
+        some simple words can mean everythings for us.
+      </p>
+      <P>
+        Baby wryd? i meant what are you doing?
+        i am feeling problem for you. i do not know why 
+        but bby i do not know what i should write 
+        mm? i do this this write my feeling but
+        i can't know ma likhu yaha pata ab whatever 
+        ma ya sikh rahi hu i meant this coding
+        but mujhe nhi lagta ya ma sikh sakti hu
+        bhot mind vala hai.aagr koi mistake ha toh 
+        bata mujhe i really want learn this 
+      </P>
+      <P>
+        i hope you like this
+      </P>
+    <P>
+      always with you hubby
+    </P>
+      <P> 
+      i love you 
+      </P>
+      <h2> sumi </h2>
+    </div> 
+  </div>
+    <button id=" openbtn">
+      open letter 💌
+    </button>
+  </div>
+  </div>
+    <sctipt>
+      const envelope =
+      dovument.getElementById("envelope")
+      const button =
+      document.genElemenById("openbtn")
+      button.addEvenListener(click", () => {
+      envelope.classList.toggle("open");
+      if (envelope.claassList.contanins("open")) {
+      button.texrContent = "Close Letter💌";
+      } else {
+      nutton.textContent = "open letter 💌";
+      }
+      });
+     </sctipt>
+  </body>
+</html>  
