@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viweport"
       contert="widht=device-widht,
       initial-scale=1.0">
     <title>my letter💌</title>
+    
     <style>
       * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
       }
        body {
          min-height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
          overflow-x: hidden;
-         font-family: "Trebuchet MS", sans-serif;
-         bavkground:
-           radial-gradient(circle at 20% 20%,
-                           #7653a8 0%, transparent 30%),
-           radial-gradient(circle at 80% 30%,
-                           #5c397f 0%, transparent 30%),
-           linear-gradient(135deg, 17152e,
-                           #4933d, #201936);
-         color: whit;
+         bavkground: linear-gradient(135deg,
+                                     #17152e, #5b3b7d);
+          font-family: Arial, sans-serif;
        }
-      .stars {
+      body::before {✨   ✨  ✨   ✨   ✨";
+        content: "
         position: fixed: 
-        inset: 0;
-        pointer-events: none;
+        top: 10%;
+        left: 5%;
+        width: 90%;
+        color: white;
+        font-size: 25px;
+        letter-spacing: 35px;
+        opacity: .7;
       }
       .star {
         position: absolute;
@@ -107,14 +111,9 @@
           opacity: 0;
         }
       }
+     
       .container {
-        min-height: 100vh;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 15px;
-      }
-      .content {
+
         text-aligm: center;
       }
       .envelope {
@@ -128,6 +127,7 @@
         box-shadow>
         0 20px 50px rgba(0,0,0,.45),
         0 0 30px rgba(255,150,200,.2);
+        overflow: hidden;
       }
       .flab {
         position: absolute;
@@ -136,10 +136,8 @@
         width: 0;
         height: 0;
 
-        border-left: calc(mic(330px, 85vw) /2)
-        solid transparent;
-        border-right: calc(mic(330px, 85vw) /2)
-        solid transparent;
+        border-left: 165px  solid transparent;
+        border-right: 165px   solid transparent;
         border-top: 125px solid #d879a2;
 
         transform-origin: top;
@@ -148,14 +146,12 @@
       }
       .heart {
         position: absolute;
-        yop: 90px;
+        top: 82px;
         left: 50%;
-        transform: translateX(-50);
-        font-size: 48px;
+        transform: translateX(-50%);
+        font-size: 45px;
         z-index: 6;
-        filter: drop-shadow;(0 5px 5px
-        rgba90(0,0,0,.25);
-        transition: .5s;
+        transition: .4s;
       }
       .letter {
         position: absolute;
