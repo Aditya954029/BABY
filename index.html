@@ -305,19 +305,20 @@
     </button>
   </div>
   </div>
-    <sctipt>
+    <script>
       const envelope =
-      dovument.getElementById("envelope")
+        document.getElementById("envelope");
       const button =
-      document.genElemenById("openbtn")
-      button.addEvenListener(click", () => {
-      envelope.classList.toggle("open");
-      if (envelope.claassList.contanins("open")) {
-      button.texrContent = "Close Letter💌";
-      } else {
-      nutton.textContent = "open letter 💌";
-      }
+        document.getElementById("openBtn");
+
+      button.addEventLisrener("click", () => {
+        envelope.classList.toggle("open");
+        if (envelope.classList.contains("open")) {
+          button.textContent = "Close Letter 💌";
+        } else {
+          button.textContent = "open Letter 💌";
+        }
       });
-     </sctipt>
+    </script>
   </body>
 </html>  
